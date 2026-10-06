@@ -1,6 +1,5 @@
 import {
   createContext,
-  useContext,
   useEffect,
   useState,
 } from "react";
@@ -92,14 +91,4 @@ export function UserProvider({
   );
 }
 
-export function useUserContext() {
-  const context = useContext(UserContext);
-
-  if (!context) {
-    throw new Error(
-      "useUserContext must be used inside UserProvider"
-    );
-  }
-
-  return context;
-}
+export default UserContext;

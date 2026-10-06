@@ -3,7 +3,7 @@ import type React from "react";
 
 import { Link, useNavigate, useParams } from "react-router-dom";
 
-import { useUserContext } from "../context/UserContext";
+import { useUserContext } from "../context/useUserContext";
 
 function EditUser() {
   const { id } = useParams();
